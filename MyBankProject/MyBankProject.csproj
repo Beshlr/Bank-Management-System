@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2D2DBD0-45FA-4997-B4C0-A4BE29E4EC41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyBankProject</RootNamespace>
+    <AssemblyName>MyBankProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BankProject.Designer.cs">
+      <DependentUpon>BankProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNewClient.Designer.cs">
+      <DependentUpon>frmAddNewClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddEditUser.Designer.cs">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientList.Designer.cs">
+      <DependentUpon>frmClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCurrencyExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCurrencyExchange.Designer.cs">
+      <DependentUpon>frmCurrencyExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepositScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepositScreen.Designer.cs">
+      <DependentUpon>frmDepositScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginRegisters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginRegisters.Designer.cs">
+      <DependentUpon>frmLoginRegisters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainLoginScreen.Designer.cs">
+      <DependentUpon>frmMainLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainScreen.Designer.cs">
+      <DependentUpon>frmMainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManageUsersScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManageUsersScreen.Designer.cs">
+      <DependentUpon>frmManageUsersScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTotalBalancesScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTotalBalancesScreen.Designer.cs">
+      <DependentUpon>frmTotalBalancesScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransactionsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransactionsScreen.Designer.cs">
+      <DependentUpon>frmTransactionsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferLogScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferLogScreen.Designer.cs">
+      <DependentUpon>frmTransferLogScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferScreen.Designer.cs">
+      <DependentUpon>frmTransferScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserProfile.Designer.cs">
+      <DependentUpon>frmUserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWithdrawScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWithdrawScreen.Designer.cs">
+      <DependentUpon>frmWithdrawScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BankProject.resx">
+      <DependentUpon>BankProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNewClient.resx">
+      <DependentUpon>frmAddNewClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddEditUser.resx">
+      <DependentUpon>frmAddEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientList.resx">
+      <DependentUpon>frmClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCurrencyExchange.resx">
+      <DependentUpon>frmCurrencyExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepositScreen.resx">
+      <DependentUpon>frmDepositScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginRegisters.resx">
+      <DependentUpon>frmLoginRegisters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainLoginScreen.resx">
+      <DependentUpon>frmMainLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainScreen.resx">
+      <DependentUpon>frmMainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageUsersScreen.resx">
+      <DependentUpon>frmManageUsersScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTotalBalancesScreen.resx">
+      <DependentUpon>frmTotalBalancesScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransactionsScreen.resx">
+      <DependentUpon>frmTransactionsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferLogScreen.resx">
+      <DependentUpon>frmTransferLogScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferScreen.resx">
+      <DependentUpon>frmTransferScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserProfile.resx">
+      <DependentUpon>frmUserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWithdrawScreen.resx">
+      <DependentUpon>frmWithdrawScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BankBussinessLayer\BankBussinessLayer.csproj">
+      <Project>{7d3330cd-79a7-424c-9a2e-2a277d778ba2}</Project>
+      <Name>BankBussinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BankVideo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\[removal.ai]_c6463262-c65f-4ca9-92f5-feedad3c0cf4-low-cost-website-designing-company--web-developer-in-thrissur-kerala-click-crafters-technology_J2P3BO %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9004772_cross_delete_cancel_remove_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6351930_eye_password_see_view_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211817_search_strong_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3844475_filter_filters_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4781833_filter_filters_funnel_list_navigation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7124162_switch_horizontal_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9055423_bxs_edit_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PhoneIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4745721_bubble_connection_email_envelope_letter_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accountProfileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994382_access_close_exit_logout_sign out_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deleteicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62721_ball_orange_sphere_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3669480_account_circle_ic_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2849811_refresh_arrows_multimedia_media_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank free vector icons designed by Freepik.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank free vector icons designed by Freepik %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank free vector icons designed by Freepik1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bank_free_vector_icons_designed_by_Freepik-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3994382_access_close_exit_logout_sign out_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643771_configuration_configure_gear_set_setting_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2202250_account_avatar_human_man_profile_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accountProfileIcon1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
